@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>làm bảng cửu chương</title>
+</head>
+<body>
+<script>
+
+   let i ;
+   let j;
+   let tab;
+   tab = '<table border="1" width="400" cellspacing="0" cellpadding="3" style="text-align: center">';
+    for(i = 1; i < 10; i ++){
+        tab = tab + '<tr>';
+        for (j = 1 ; j < 10 ;j++){
+            tab = tab +"<td>" +j +"x"+ i+"=" +i*j +"</td>";
+        }
+        tab = tab + '</tr>';
+    }
+    tab =tab + "</table>"
+    document.write(tab);
+
+</script>
+
+</body>
+</html>
