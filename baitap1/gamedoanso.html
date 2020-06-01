@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<button id="click" type="button" onclick="clickMe()">chơi</button>
+<script>
+    function clickMe() {
+        let a = +prompt('chọn số đầu tiên');
+        let b = +prompt('chọn số cuối cùng');
+        let ranD  = +Math.round((Math.random()*b)+a);
+        alert('số bạn máy chọn là ' + ranD);
+        for(let i = 1 ;i > 0;i++){
+                let num = +prompt('mời bạn nhập số cần chơi');
+                if(num === ranD ){
+                    alert('bạn đã trúng một bịt thạch dừa!');
+                    break;
+                }else if(num > ranD){
+                    alert('số bạn đoán lớn hơn! cho chọn lại');
+                }else {
+                    alert('số bạn chọn nhỏ hơn! cho chọn lại');
+                }
+
+        }
+
+    }
+
+</script>
+</body>
+</html>

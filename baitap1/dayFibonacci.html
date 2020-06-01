@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 20 số đầu trong dãy sô Fibonacci</title>
+</head>
+<body>
+<script>
+    // Dãy Fibonacci là dãy vô hạn các số tự nhiên bắt đầu bằng hai phần tử 0 và 1 hoặc 1 và 1,
+    // các phần tử sau đó được thiết lập theo quy tắc mỗi phần tử luôn bằng tổng hai phần tử trước nó.
+
+    let f0 = 0;
+    let f1 = 1;
+    document.write(f0+'<br/>');
+    document.write(f1 + '<br/>');
+    let f2;
+    let i;
+
+    for (i = 0;i < 18; i++){
+        f2 = f1 + f0;
+        document.write(f2 + '<br/>');
+        f0 = f1;
+        f1 = f2;
+
+
+    }
+    let tong = f0 + f1 + f2 ;
+        document.write('tong 20 so la' + tong);
+
+</script>
+</body>
+</html>
