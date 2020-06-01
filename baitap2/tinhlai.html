@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi ngân hàng</title>
+</head>
+<body>
+
+<script>
+    let money = +prompt('nhập vào số tiền bạn cần vay');
+    let month = +prompt('số tháng cần vay');
+    let interest = +prompt('số lãi hàng tháng');
+    let lai = interest/100;
+    let tong;
+    let i;
+    for (i = 0;i < month ;i++){
+        tong = money * ((1+lai)**month);
+
+
+    }
+    document.write('số tiền bạn cần vay là '+ money + ' VNĐ'+'<br/>');
+    document.write('trong vòng '+ month + ' tháng'+'<br/>' );
+    document.write('với lãi suất là '+ lai + ' % một tháng'+'<br/>');
+    document.write('tổng số tiền bạn phải trả là ' + tong + ' VNĐ'+'<br/>');
+
+
+
+</script>
+</body>
+</html>
