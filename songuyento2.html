@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //check số nguyên tố
+    function checkNumber(number) {
+        if (number < 2) {
+            return false;
+        } else if (number === 2) {
+            return true;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    //dem so
+    function countNumber() {
+        let number = +prompt('nhap so');
+        count = 1;
+        num = 1;
+        while (count <= number) {
+            if (checkNumber(num)) {
+                document.write(num + '<br/>');
+                count++;
+            }
+            num++;
+        }
+
+
+    }
+
+    countNumber();
+</script>
+</body>
+</html>

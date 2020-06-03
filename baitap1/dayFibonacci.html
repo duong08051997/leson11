@@ -15,8 +15,8 @@
     document.write(f1 + '<br/>');
     let f2;
     let i;
-
-    for (i = 0;i < 18; i++){
+    let number = +prompt('nhập số lượng cần in ra')
+    for (i = 2;i < number; i++){
         f2 = f1 + f0;
         document.write(f2 + '<br/>');
         f0 = f1;
@@ -25,7 +25,7 @@
 
     }
     let tong = f0 + f1 + f2 ;
-        document.write('tong 20 so la' + tong);
+        document.write('tong '+number+  ' so la ' + tong);
 
 </script>
 </body>
